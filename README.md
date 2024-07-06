@@ -19,7 +19,7 @@ bash finetune_(al)bert.sh
 To perform inference execute the following command.
 
 ```setup
-bash expert_infer_(al)bert.sh
+bash patience_infer_(al)bert.sh
 ```
 
 ## Datasets
