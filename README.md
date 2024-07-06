@@ -26,4 +26,4 @@ bash patience_infer_(al)bert.sh
 
 Glue datasets are available at [GLUE datasets](https://gluebenchmark.com/)
 
-We acknowledge PABEE authors for making their work public [PABEE](https://github.com/JetRunner/PABEE/tree/master)
+We acknowledge [PABEE](https://github.com/JetRunner/PABEE/tree/master) authors for making their work public. 
