@@ -1,29 +1,48 @@
-# DIMEE: Distributed Inference on Mobile Edge and Cloud: An Early Exit Approach
+# 🚀 DIMEE: Distributed Inference on Mobile, Edge, and Cloud – An Early Exit Approach  
 
-This repository is the official implementation of the work DIMEE: Distributed Inference on Mobile Edge and Cloud: An Early Exit Approach
+This repository contains the official implementation of **DIMEE: Distributed Inference on Mobile, Edge, and Cloud** – a novel **Early Exit Approach** to optimize inference efficiency across resource-constrained environments.  
 
-## Requirements
+---
 
-We built upon our code using the [huggingface transformers](https://huggingface.co/docs/transformers/en/index). To use our code install it. 2.5.1, torch 1.4.0
+## 📋 Table of Contents  
+- [✨ Introduction](#-introduction)  
+- [🛠 Requirements](#-requirements)  
+- [📖 Training](#-training)  
+- [⚡ Inference](#-inference)  
+- [📊 Datasets](#-datasets)  
+- [🙏 Acknowledgements](#-acknowledgements)  
 
-## Training 
+---
 
-To fine-tune a pre-trained language model on and train the internal classifiers follow the command:
+## ✨ Introduction  
+Deep Neural Networks (DNNs) demand high computational power, making deployment on edge and mobile devices challenging. **DIMEE** leverages **Early Exit strategies** to distribute inference dynamically across mobile, edge, and cloud environments, reducing latency and computational cost.  
 
-```setup
+---
+
+## 🛠 Requirements  
+Ensure you have the following dependencies installed before running the code:  
+
+```bash
+pip install torch==1.4.0 transformers==2.5.1
+```
+
+## 📖 Training
+Fine-tune a pre-trained language model and train the internal classifiers using the command:
+
+```bash
 bash finetune_(al)bert.sh
 ```
 
-## Inference
+## ⚡ Inference
+Run inference using the following command:
 
-To perform inference execute the following command.
-
-```setup
+```bash
 bash patience_infer_(al)bert.sh
 ```
 
-## Datasets
+## 📊 Datasets
+We use benchmark GLUE datasets, available at [GLUE Datasets](https://gluebenchmark.com/).
 
-Glue datasets are available at [GLUE datasets](https://gluebenchmark.com/)
 
-We acknowledge [PABEE](https://github.com/JetRunner/PABEE/tree/master) authors for making their work public. 
+## 🙏 Acknowledgements
+We extend our gratitude to the authors of [PABEE](https://github.com/JetRunner/PABEE/tree/master) for making their work publicly available.
